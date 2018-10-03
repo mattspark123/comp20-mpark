@@ -4,7 +4,7 @@
 @media only screen
 and (min-width: 1201px){
 	.responsive { width: 438px; height: 582px;
-    	background: url("software.png") 0px 0px; 
+    	background: url(images/software.png) 0px 0px; 
 	}
 }
 
@@ -14,7 +14,7 @@ and (min-width: 1201px){
 and (min-width: 1001px)
 and (max-width: 1200px){
 	.responsive { width: 435px; height: 577px;
-        background: url("software.png") 430px 0px; 
+        background: url(images/software.png) 430px 0px; 
     }
 }
 
@@ -24,7 +24,7 @@ and (max-width: 1200px){
 and (min-width: 801px)
 and (max-width: 1000px){
 	.responsive { width: 338px; height: 580px;
-        background: url("software.png") 865px 0px; 
+        background: url(images/software.png) 865px 0px; 
     }
 }
 
@@ -34,7 +34,7 @@ and (max-width: 1000px){
 and (min-width: 601px)
 and (max-width: 800px){
 	.responsive { width: 716px; height: 625px;
-        background: url("software.png") 0px -586px; 
+        background: url(images/software.png) 0px -586px; 
     }
 }
 
@@ -43,7 +43,7 @@ and (max-width: 800px){
 @media only screen 
 and (max-width: 600px){
 	.responsive { width: 488px; height: 625px;
-        background: url("software.png") 716px -586px ; 
+        background: url(images/software.png) 716px -586px ; 
     }
 }
 
