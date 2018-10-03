@@ -4,7 +4,7 @@
 @media only screen
 and (min-width: 1201px){
 	.responsive { width: 438px; height: 582px;
-    	background: url(software.png) 0px 0px; 
+    	background: url("software.png") 0px 0px; 
 	}
 }
 
