@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>We Do</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+<h1 id="title">We Do</h1>
+
+<video src="https://www.cs.tufts.edu/comp/20/wedo.mp4" id="wedo" controls></video>
+<div id="lyrics"></div>
+
+<script>
+	// Complete this section and create a CSS file named style.css
+	var video = document.getElementById("wedo");
+	var caption = document.getElementById("lyrics");
+
+	video.addEventListener("timeupdate", function() {
+		if (video.currentTime < 4) {
+			caption.innerHTML ="<h3>~music interlude~</h3>";
+		}
+		else if (video.currentTime > 4 && video.currentTime < 6) {
+			caption.innerHTML = "<h3>Who controls the British crown?</h3>";
+		}
+		else if (video.currentTime > 6 && video.currentTime < 8) {
+			caption.innerHTML = "<h3>Who keeps the metric system down?</h3>";
+		}
+		else if (video.currentTime > 8 && video.currentTime < 12.5) {
+			caption.innerHTML = "<h3>We do, we do!</h3>";
+		}
+		else if (video.currentTime > 12.5 && video.currentTime < 14.5) {
+			caption.innerHTML = "<h3>Who keeps Atlantis off the maps?</h3>";
+		}
+		else if (video.currentTime > 14.5 && video.currentTime < 16.5) {
+			caption.innerHTML = "<h3>Who keeps the Martians under wraps?</h3>";
+		}
+		else if (video.currentTime > 16.5 && video.currentTime < 20.5) {
+			caption.innerHTML = "<h3>We do, we do!</h3>";
+		}
+		else if (video.currentTime > 20.5 && video.currentTime < 25) {
+			caption.innerHTML = "<h3>Who holds back the electric car?</h3>";
+		}
+		else if (video.currentTime > 25 && video.currentTime < 29) {
+			caption.innerHTML = "<h3>Who makes Steve Guttenberg a star?</h3>";
+		}
+		else if (video.currentTime > 29 && video.currentTime < 33.5) {
+			caption.innerHTML = "<h3>We do, we do!</h3>";
+		}
+		else if (video.currentTime > 33.5 && video.currentTime < 35.5) {
+			caption.innerHTML = "<h3>Who robs cavefish of their sight?</h3>";
+		}
+		else if (video.currentTime > 35.5 && video.currentTime < 37.5) {
+			caption.innerHTML = "<h3>Who rigs every Oscar night?</h3>";
+		}
+		else if (video.currentTime > 37.5 && video.currentTime < 40.5) {
+			caption.innerHTML = "<h3>We do!</h3>";
+		}
+		else if (video.currentTime > 40.5 && video.currentTime < 45) {
+			caption.innerHTML = "<h3>We do!</h3>";
+		}
+	}, false);
+</script>
+</body>
+</html>	

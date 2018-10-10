@@ -1,0 +1,17 @@
+/* Style.css -- Style Sheet for We Do Video */
+#title{
+	font-family: "Comic Sans MS";
+	text-align: center;
+	color: magenta;
+	font-size: 48px;
+	margin-left: 10%;
+	margin-right: 10%;
+	border: solid;
+}
+
+body{
+	font-family: "Comic Sans MS";
+	text-align: center;
+	background-color: black;
+	color: magenta;
+}
