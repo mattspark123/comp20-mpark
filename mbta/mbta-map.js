@@ -37,8 +37,7 @@
         var stop_icon = {
         	url: 'https://cdn1.iconfinder.com/data/icons/anchor/128/train.png',
         	scaledSize: new google.maps.Size(35,35)
-        	//origin: new google.maps.Point(0,0),
-        	//anchor: new google.maps.Point(0,0)
+        	
         };
         var sstat = new google.maps.Marker({
         	position: loc_sstat,
@@ -225,8 +224,7 @@
         
         redline.setMap(map);
         redline_2.setMap(map);
-        console.log ("uno");
-        console.log ("hit me hard one!");
+
 
         if (navigator.geolocation) { //getting location
           navigator.geolocation.getCurrentPosition(function(position) {
@@ -410,24 +408,20 @@
 
           
 
-          //function loadStation() {
-			/* Step 1: Make instance of XHR object...
-			...to make HTTP request after page is loaded*/
-			var t_stop_id = " "
-			//var time;
-			
+          
+			var t_stop_id = " "	
 			
 			function loadStation(){
           var request = new XMLHttpRequest();
-			console.log("Hit me 1");
-			// Step 2: Open the JSON file at remote location
+
+			
 			request.open("GET", "https://chicken-of-the-sea.herokuapp.com/redline/schedule.json?stop_id=" + t_stop_id, true);
-			console.log("Hit me 2");
-			// Step 3: set up callback for when HTTP response is returned (i.e., you get the JSON file back)
+
+			
 			request.onreadystatechange = function() {
-				console.log("Hit me 3");
+
 				if (request.readyState == 4 && request.status == 200) {
-					// Step 5: when we get all the JSON data back, parse it and use it
+					
 					theData = request.responseText;
 					elem = JSON.parse(theData);
 					var number;
@@ -466,29 +460,13 @@
 					time3 = number3.substr(11, 5);
 
 					stationwindow.setContent("Next trains come at [" + time + "] " + "going " + bound + ", [" + time2 + "] " + "going " + bound2 + ", [" + time3 + "] " + "going " + bound3);
-					console.log(time);
-					console.log(number);
-					console.log(time2);
-					console.log(time3);
-
-					// stationwindow.open(map);
-     //        		map.setCenter(pos);
-				
-					
+									
 				}
 			}
-				/*else if (request.readyState == 4 && request.status != 200) {
-					document.getElementById("messages").innerHTML = "Whoops, something went terribly wrong!";
-				}
-				else if (request.readyState == 3) {
-					document.getElementById("messages").innerHTML = "Come back soon!";
-				}*/
 			request.send();
-			console.log("Hit me 4");
+
 			}
-			// Step 4: fire off the HTTP request
-			
-		//}
+
 
 		sstat.addListener('click', function(){
           	stationwindow.setPosition(sstat_test);
@@ -666,7 +644,6 @@
             map.setCenter(brntn_test);
           });
 
-//pos expires here
           }, function() {
             handleLocationError(true, infoWindow, map.getCenter());
           });
