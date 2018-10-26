@@ -490,13 +490,182 @@
 			
 		//}
 
+		sstat.addListener('click', function(){
+          	stationwindow.setPosition(sstat_test);
+          	t_stop_id = "place-sstat";
+          	loadStation();
+          	stationwindow.open(map);
+            map.setCenter(sstat_test);
+          });
+		
+		andrw.addListener('click', function(){
+          	stationwindow.setPosition(andrw_test);
+          	t_stop_id = "place-andrw";
+          	loadStation();
+          	stationwindow.open(map);
+            map.setCenter(andrw_test);
+          });
+
+		portr.addListener('click', function(){
+          	stationwindow.setPosition(portr_test);
+          	t_stop_id = "place-portr";
+          	loadStation();
+          	stationwindow.open(map);
+            map.setCenter(portr_test);
+          });
+
+		harsq.addListener('click', function(){
+          	stationwindow.setPosition(harsq_test);
+          	t_stop_id = "place-harsq";
+          	loadStation();
+          	stationwindow.open(map);
+            map.setCenter(harsq_test);
+          });
+
+		jfk.addListener('click', function(){
+          	stationwindow.setPosition(jfk_test);
+          	t_stop_id = "place-jfk";
+          	loadStation();
+          	stationwindow.open(map);
+            map.setCenter(jfk_test);
+          });
+
+		shmnl.addListener('click', function(){
+          	stationwindow.setPosition(shmnl_test);
+          	t_stop_id = "place-shmnl";
+          	loadStation();
+          	stationwindow.open(map);
+            map.setCenter(shmnl_test);
+          });
+
+		pktrm.addListener('click', function(){
+          	stationwindow.setPosition(pktrm_test);
+          	t_stop_id = "place-pktrm";
+          	loadStation();
+          	stationwindow.open(map);
+            map.setCenter(pktrm_test);
+          });
+
+		brdwy.addListener('click', function(){
+          	stationwindow.setPosition(brdwy_test);
+          	t_stop_id = "place-brdwy";
+          	loadStation();
+          	stationwindow.open(map);
+            map.setCenter(brdwy_test);
+          });
+
+		nqncy.addListener('click', function(){
+          	stationwindow.setPosition(nqncy_test);
+          	t_stop_id = "place-nqncy";
+          	loadStation();
+          	stationwindow.open(map);
+            map.setCenter(nqncy_test);
+          });
+
+		smmnl.addListener('click', function(){
+          	stationwindow.setPosition(smmnl_test);
+          	t_stop_id = "place-smmnl";
+          	loadStation();
+          	stationwindow.open(map);
+            map.setCenter(smmnl_test);
+          });
+
 		davis.addListener('click', function(){
           	stationwindow.setPosition(davistest);
           	t_stop_id = "place-davis";
           	loadStation();
           	stationwindow.open(map);
-            map.setCenter(pos);
+            map.setCenter(davistest);
           });
+
+		alfcl.addListener('click', function(){
+          	stationwindow.setPosition(alfcl_test);
+          	t_stop_id = "place-alfcl";
+          	loadStation();
+          	stationwindow.open(map);
+            map.setCenter(alfcl_test);
+          });
+
+		knncl.addListener('click', function(){
+          	stationwindow.setPosition(knncl_test);
+          	t_stop_id = "place-knncl";
+          	loadStation();
+          	stationwindow.open(map);
+            map.setCenter(knncl_test);
+          });
+
+		chmnl.addListener('click', function(){
+          	stationwindow.setPosition(chmnl_test);
+          	t_stop_id = "place-chmnl";
+          	loadStation();
+          	stationwindow.open(map);
+            map.setCenter(chmnl_test);
+          });
+
+		dwnxg.addListener('click', function(){
+          	stationwindow.setPosition(dwnxg_test);
+          	t_stop_id = "place-dwnxg";
+          	loadStation();
+          	stationwindow.open(map);
+            map.setCenter(dwnxg_test);
+          });
+
+		qnctr.addListener('click', function(){
+          	stationwindow.setPosition(qnctr_test);
+          	t_stop_id = "place-qnctr";
+          	loadStation();
+          	stationwindow.open(map);
+            map.setCenter(qnctr_test);
+          });
+
+		qamnl.addListener('click', function(){
+          	stationwindow.setPosition(qamnl_test);
+          	t_stop_id = "place-qamnl";
+          	loadStation();
+          	stationwindow.open(map);
+            map.setCenter(qamnl_test);
+          });
+
+		asmnl.addListener('click', function(){
+          	stationwindow.setPosition(asmnl_test);
+          	t_stop_id = "place-asmnl";
+          	loadStation();
+          	stationwindow.open(map);
+            map.setCenter(asmnl_test);
+          });
+
+		wlsta.addListener('click', function(){
+          	stationwindow.setPosition(wlsta_test);
+          	t_stop_id = "place-wlsta";
+          	loadStation();
+          	stationwindow.open(map);
+            map.setCenter(wlsta_test);
+          });
+
+		fldcr.addListener('click', function(){
+          	stationwindow.setPosition(fldcr_test);
+          	t_stop_id = "place-fldcr";
+          	loadStation();
+          	stationwindow.open(map);
+            map.setCenter(fldcr_test);
+          });
+
+		cntsq.addListener('click', function(){
+          	stationwindow.setPosition(cntsq_test);
+          	t_stop_id = "place-cntsq";
+          	loadStation();
+          	stationwindow.open(map);
+            map.setCenter(cntsq_test);
+          });
+
+		brntn.addListener('click', function(){
+          	stationwindow.setPosition(brntn_test);
+          	t_stop_id = "place-brntn";
+          	loadStation();
+          	stationwindow.open(map);
+            map.setCenter(brntn_test);
+          });
+
 //pos expires here
           }, function() {
             handleLocationError(true, infoWindow, map.getCenter());
