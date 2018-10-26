@@ -10,5 +10,5 @@ Credit for the T station icon: https://www.iconfinder.com/icons/1054954/locomoti
 Asked classmate Phan Anh for help with XML syntax, just to clarify something we learned in class (I missed one class due to an interview). He did not see my code nor did I see his.
 
 3. Say approximately how many hours you have spent completing the assignment.
-Probably 20-25?
+Probably 25-30?
 
