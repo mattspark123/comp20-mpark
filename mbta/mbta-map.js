@@ -432,10 +432,44 @@
 					elem = JSON.parse(theData);
 					var number;
 					number = (elem.data[0].attributes.arrival_time);
+					number2 = (elem.data[1].attributes.arrival_time);
+					number3 = (elem.data[2].attributes.arrival_time);
+					bound = (elem.data[0].attributes.direction_id);
+					bound2 = (elem.data[1].attributes.direction_id);
+					bound3 = (elem.data[2].attributes.direction_id);
+
+					if (bound == 0){
+						bound = "Inbound";
+					}
+
+					else{
+						bound = "Outbound";
+					}
+
+					if (bound2 == 0){
+						bound2 = "Inbound";
+					}
+
+					else{
+						bound2 = "Outbound";
+					}
+
+					if (bound3 == 0){
+						bound3 = "Inbound";
+					}
+
+					else{
+						bound3 = "Outbound";
+					}
 					time = number.substr(11, 5);
-					stationwindow.setContent("Next train comes at " + time);
+					time2 = number2.substr(11, 5);
+					time3 = number3.substr(11, 5);
+
+					stationwindow.setContent("Next trains come at [" + time + "] " + "going " + bound + ", [" + time2 + "] " + "going " + bound2 + ", [" + time3 + "] " + "going " + bound3);
 					console.log(time);
 					console.log(number);
+					console.log(time2);
+					console.log(time3);
 
 					// stationwindow.open(map);
      //        		map.setCenter(pos);
