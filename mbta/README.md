@@ -15,3 +15,12 @@ Asked classmate Phan Anh for help with XML syntax, just to clarify something we 
 
 Probably 25-30?
 
+Note: When I asked if I would get penalized because wanted to change an icon to not be an absolute url anymore (after the deadline), Ming said
+
+" No :-)
+ 
+
+It is more important to get it right."
+
+so in that spirit, I made two changes: I changed the icon, and I added a quick functionality to show how far the closest station is. These were the only two things done after the due date, I hope that's okay!
+
