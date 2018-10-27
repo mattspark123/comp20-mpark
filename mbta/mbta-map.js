@@ -389,6 +389,9 @@
           markers[smallest_index]
           ];
           
+          var shortest_distance_m = google.maps.geometry.spherical.computeDistanceBetween(your_coord, markers[smallest_index]);
+          var shortest_distance = (shortest_distance_m/1609.344);
+
           var shortest_path_line = new google.maps.Polyline({
         	path: shortest_path,
             geodesic: true,
@@ -403,7 +406,7 @@
 
           you.addListener('click', function(){
           	infoWindow.setPosition(pos);
-            infoWindow.setContent("The closest T station is " + closest_station);
+            infoWindow.setContent("The closest T station is " + closest_station + " which is " + shortest_distance + " miles away.");
           });
 
           
