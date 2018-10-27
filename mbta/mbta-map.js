@@ -35,7 +35,7 @@
         stationwindow = new google.maps.InfoWindow;
 
         var stop_icon = {
-        	url: 'https://cdn1.iconfinder.com/data/icons/anchor/128/train.png',
+        	url: 'trainicon.png',
         	scaledSize: new google.maps.Size(35,35)
         	
         };
