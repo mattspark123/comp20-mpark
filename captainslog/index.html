@@ -10,28 +10,34 @@
     <script>
         // Your work will be done here...
 
-
 $( document ).ready(function() {
-    
 
+    var counter = 0;
+    
+    var cookies = new Array();
+    for (var i = 0; i < localStorage.length; i++){
+        cookies[i] = localStorage.key(i) + " - " + localStorage.getItem(localStorage.key(i));
+    }
+
+    var sorted_cookies = cookies.sort();
+    for (var j = 0; j < sorted_cookies.length; j++){
+        $('#log').prepend(sorted_cookies[j] + "<br />");
+    }
+    
     $( "#msg" ).keypress(function(e) {
     if(e.which == 13) {
+        
         var date = new Date($.now());
         var text = $("#msg").val();
-        $("#msg").val(text + '\n');
-        $('#log').after(date + " - " + text + "<br />");
-        //$('#log').after("<br />");
+        $("#msg").text(text + '\n');
+        $('#log').prepend(date + " - " + text + "<br />");
+        localStorage.setItem(date, text);
         $('#msg').val('');
 
-        var storage = $("#msg");
-        console.log(storage[0]);
-
-
-        //console.log()
     }
 });
  
- //localStorage.setItem(storage)
+ 
 
  
 });
